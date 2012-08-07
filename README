@@ -1,0 +1,174 @@
+
+Corel Geological Drafting Kit (CGDK)
+
+******************************************************************************************************************************
+
+Created by:
+
+	Junting Qiu(programmer)
+
+	Wanjiao Song(designer)
+
+	Chengxin Jiang(testing personel)
+
+	Han Wu(testing personel)
+
+******************************************************************************************************************************
+
+What we offer:
+
+	1. A software package named "Corel Geological Drafting Kit (CGDK)" with an "setup.exe" file
+
+	2. An application article about how to use the software
+
+	3. Source code of the software
+
+	4. 20 geochemical diagram templates
+
+	5. Several examples and outputs of the software
+
+******************************************************************************************************************************
+
+Software:
+
+	1. The software can be downloaded at:
+		http://doi.pangaea.de/10.1594/PANGAEA.786481?format=html
+
+	2. Current software version:
+		v1.0
+
+	3. Software requirements:
+		The software has been tested to run well on CorelDraw 13/14/15 with Excel 2003/2007 under window xp/vista/7.
+
+	4. How to install:
+		Users can install the software on their computers by running the "setup.exe" included in the software package.
+
+	5. How to use the software:
+		(Please read the application article)
+
+******************************************************************************************************************************
+
+Application article:
+
+	1. The application article about how to use the software can be downloaded at:
+		http://dx.doi.org/10.1016/j.cageo.2012.07.020
+
+	2. Users are encouraged to cite the article in the following format:
+		Qiu, J.T., Song, W.J., Jiang, C.X., Wu, H., Dong, R.M., 2012. 
+		Corel Geological Drafting Kit (CGDK) 
+		- an extensible CorelDRAW VBA program for geological drafting. 
+		Computers & Geosciences, In Press.
+		
+******************************************************************************************************************************
+
+Source code:
+	
+	1. The source code is available at:
+		http://doi.pangaea.de/10.1594/PANGAEA.786481?format=html
+			
+			-The code can also be found at:
+				https://github.com/midimyself/CGDK.git
+				
+
+	2. Code license:
+		Creative Commons Attribution-NonCommercial 3.0 Unported 
+			
+			-Users can share and modify the code without commercial use
+			
+			-Users must attribute the work in the manner specified by the author or licensor
+	
+	3. How to modify and debug the code:
+		
+		-> Download all the code files (.bas; .frm; .cls; .frx)
+
+		-> Open the VBE provided by CorelDraw
+
+		-> Create a new project in VBE
+
+		-> Import all code files into the new created project
+
+		-> Double click on any code file to view the code
+
+		-> Modify the code and use the debug command to evaluate it 
+	
+	4. The structure of the project and the feature of each module, form or class:
+		
+		modules:
+
+			API- define all api
+
+			CalibrateMap- define the functions that are used to caliborate a geochemical map
+
+			Common-define some basic functions
+
+			File- define the functions to open or activate Excel
+
+			Geochemistry-define the functions for create geochemical diagrams
+
+			GetDataRange-define the functions for data improtation from Excel
+
+			Module_PlotOnMap-define the functions for plotting data on map
+
+			Openwindows-define functions that are used to open specified window
+
+			Project- define all functions for plotting projections and rose diagrams
+
+			ShowGPSLocation-define the functions that do coordinate conversion
+
+			Stratigraphic- define the functions for drawing stratigraphic columns
+
+			Tools- define the functions for smart fill and smart select
+			
+		forms:
+			
+			About- The about window
+
+			Calibrator- The Calibrat window
+
+			CommonTools- The Common tool window
+
+			Data- The data confirmation box
+
+			DrawProjection- The draw projection window
+
+			DrawStratigraphicColumns- The draw stratigraphic columns window
+
+			GPSLocation- The float window that displays the latitude and longitude of a point
+
+			Lithology- The lithology window
+
+			MoveTo- The move to window
+
+			PlotGeochemistryDiagram- The plot geochistry diagram window
+
+			PlotOnMap- The plot on map window
+
+			SaveTemplate- The save template window
+
+			SeriesEditor- The series editor window
+
+			TemplateDesigner- The template designer window
+
+			TemplateManager- The template manager window
+			
+		class:
+		
+			DataGroup-This class is used to divide azimuths and dips into different groups
+
+			KeyCollection-This class is used to create collection object. the difference between KeyCollection object
+					and the Collection object is elements in KeyCollection object can be find by key value
+					rather than index
+
+			Series-This class is used to create data series object that can store series data from Excel
+
+			UTMConverter-This class is used to create UTMConverter object that contains coordinate conversion functions
+
+******************************************************************************************************************************
+
+Contact us:
+
+	Any questions, suggestions or bug reports? Please sent email to:
+
+	1. midimyself@126.com
+
+	2. wanjiaosong@126.com
